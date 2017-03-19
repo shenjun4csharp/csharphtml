@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>10.3 接口的实现 · C#入门经典最新版</title>
+        <title>10.3 接口的实现 · 博军一笑的个人主页</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -2280,27 +2280,27 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.1.8" >
+        <li class="chapter " data-level="1.12.1.8" data-path="../第11章 集合、比较和转换/1118-shen-du-fu-zhi.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/1118-shen-du-fu-zhi.html">
             
                     
                     11.1.8 深度复制
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.12.1.9" >
+        <li class="chapter " data-level="1.12.1.9" data-path="../第11章 集合、比较和转换/1119-gei-cardlib-tian-jia-shen-du-fu-zhi.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/1119-gei-cardlib-tian-jia-shen-du-fu-zhi.html">
             
                     
                     11.1.9 给CardLib添加深度复制
             
-                </span>
+                </a>
             
 
             
@@ -2311,41 +2311,41 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.2" >
+        <li class="chapter " data-level="1.12.2" data-path="../第11章 集合、比较和转换/112-bi-jiao.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/112-bi-jiao.html">
             
                     
                     11.2 比较
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.12.2.1" >
+        <li class="chapter " data-level="1.12.2.1" data-path="../第11章 集合、比较和转换/112-bi-jiao/1121-lei-xing-bi-jiao.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/112-bi-jiao/1121-lei-xing-bi-jiao.html">
             
                     
                     11.2.1 类型比较
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.12.2.2" >
+        <li class="chapter " data-level="1.12.2.2" data-path="../第11章 集合、比较和转换/112-bi-jiao/1122-zhi-bi-jiao.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/112-bi-jiao/1122-zhi-bi-jiao.html">
             
                     
                     11.2.2 值比较
             
-                </span>
+                </a>
             
 
             
@@ -3120,33 +3120,37 @@
                                 
                                 <h2 id="&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;">&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;</h2>
 <p>&#x2003;&#x2003;&#x5728;&#x7EE7;&#x7EED;&#x524D;&#xFF0C;&#x5148;&#x8BA8;&#x8BBA;&#x4E00;&#x4E0B;&#x5982;&#x4F55;&#x5B9A;&#x4E49;&#x548C;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x3002;&#x7B2C; 9 &#x7AE0;&#x4ECB;&#x7ECD;&#x8FC7;&#x63A5;&#x53E3;&#x7684;&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;&#x4E0E;&#x7C7B;&#x76F8;&#x4F3C;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-javascript">        interface IMyInterface
+<pre><code class="lang-csharp">        <span class="hljs-keyword">interface</span> <span class="hljs-title">IMyInterface</span>
         {
             <span class="hljs-comment">// Interface members.</span>
         }
 </code></pre>
 <p>&#x2003;&#x2003;&#x63A5;&#x53E3;&#x6210;&#x5458;&#x7684;&#x5B9A;&#x4E49;&#x4E0E;&#x7C7B;&#x6210;&#x5458;&#x7684;&#x5B9A;&#x4E49;&#x76F8;&#x4F3C;&#xFF0C;&#x4F46;&#x5177;&#x6709;&#x51E0;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x533A;&#x522B;&#xFF1A;</p>
-<p>&#x2003;&#x2003;&#x25CF; &#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;(<code>public</code>&#x3001;<code>private</code>&#x3001;<code>protected</code> &#x6216; <code>internal</code>)&#xFF0C;&#x6240;&#x6709;&#x63A5;&#x53E3;&#x6210;&#x5458;&#x90FD;&#x9690;&#x5F0F;&#x5730;&#x662F;&#x516C;&#x5171;&#x7684;&#x3002;</p>
-<p>&#x2003;&#x2003;&#x25CF; &#x63A5;&#x53E3;&#x6210;&#x5458;&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x4EE3;&#x7801;&#x4F53;&#x3002;</p>
-<p>&#x2003;&#x2003;&#x25CF; &#x63A5;&#x53E3;&#x4E0D;&#x80FD;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;&#x6210;&#x5458;&#x3002;</p>
-<p>&#x2003;&#x2003;&#x25CF; &#x4E0D;&#x80FD;&#x7528;&#x5173;&#x952E;&#x5B57; <code>static</code>&#x3001;<code>virtual</code>&#x3001;<code>abstract</code> &#x6216; <code>sealed</code> &#x6765;&#x5B9A;&#x4E49;&#x63A5;&#x53E3;&#x6210;&#x5458;&#x3002;</p>
-<p>&#x2003;&#x2003;&#x25CF; &#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x6210;&#x5458;&#x662F;&#x7981;&#x6B62;&#x7684;&#x3002;</p>
-<p>&#x2003;&#x2003;&#x4F46;&#x8981;&#x9690;&#x85CF;&#x4ECE;&#x57FA;&#x63A5;&#x53E3;&#x4E2D;&#x7EE7;&#x627F;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5173;&#x952E;&#x5B57; <code>new</code> &#x6765;&#x5B9A;&#x4E49;&#x5B83;&#x4EEC;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-javascript">        interface IMyBaseInterface
+<pre><code>    &#x25CF; &#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;(public&#x3001;private&#x3001;protected &#x6216; internal)&#xFF0C;&#x6240;&#x6709;&#x63A5;&#x53E3;&#x6210;&#x5458;&#x90FD;&#x9690;&#x5F0F;&#x5730;&#x662F;&#x516C;&#x5171;&#x7684;&#x3002;
+
+    &#x25CF; &#x63A5;&#x53E3;&#x6210;&#x5458;&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x4EE3;&#x7801;&#x4F53;&#x3002;
+
+    &#x25CF; &#x63A5;&#x53E3;&#x4E0D;&#x80FD;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;&#x6210;&#x5458;&#x3002;
+
+    &#x25CF; &#x4E0D;&#x80FD;&#x7528;&#x5173;&#x952E;&#x5B57; static&#x3001;virtual&#x3001;abstract &#x6216; sealed &#x6765;&#x5B9A;&#x4E49;&#x63A5;&#x53E3;&#x6210;&#x5458;&#x3002;
+
+    &#x25CF; &#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#x6210;&#x5458;&#x662F;&#x7981;&#x6B62;&#x7684;&#x3002;
+</code></pre><p>&#x2003;&#x2003;&#x4F46;&#x8981;&#x9690;&#x85CF;&#x4ECE;&#x57FA;&#x63A5;&#x53E3;&#x4E2D;&#x7EE7;&#x627F;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5173;&#x952E;&#x5B57; <code>new</code> &#x6765;&#x5B9A;&#x4E49;&#x5B83;&#x4EEC;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-csharp">        <span class="hljs-keyword">interface</span> <span class="hljs-title">IMyBaseInterface</span>
         {
-            <span class="hljs-keyword">void</span> DoSomething();
+            <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">DoSomething</span>(<span class="hljs-params"></span>)</span>;
         }
 
-        interface IMyDerivedInterface : IMyBaseInterface
+        <span class="hljs-keyword">interface</span> <span class="hljs-title">IMyDerivedInterface</span> : <span class="hljs-title">IMyBaseInterface</span>
         {
-            <span class="hljs-keyword">new</span> <span class="hljs-keyword">void</span> DoSomething();
+            <span class="hljs-keyword">new</span> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">DoSomething</span>(<span class="hljs-params"></span>)</span>;
         }
 </code></pre>
 <p>&#x2003;&#x2003;&#x5176;&#x65B9;&#x5F0F;&#x4E0E;&#x9690;&#x85CF;&#x7EE7;&#x627F;&#x7684;&#x7C7B;&#x6210;&#x5458;&#x7684;&#x65B9;&#x6CD5;&#x4E00;&#x6837;&#x3002;</p>
 <p>&#x2003;&#x2003;&#x5728;&#x63A5;&#x53E3;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x8BBF;&#x95EE;&#x5757; <code>get</code> &#x548C; <code>set</code> &#x4E2D;&#x7684;&#x54EA;&#x4E00;&#x4E2A;&#x80FD;&#x7528;&#x4E8E;&#x8BE5;&#x5C5E;&#x6027;&#xFF08;&#x6216;&#x5C06;&#x5B83;&#x4EEC;&#x540C;&#x65F6;&#x7528;&#x4E8E;&#x8BE5;&#x5C5E;&#x6027;&#xFF09;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-javascript">        interface IMyInterface
+<pre><code class="lang-csharp">        <span class="hljs-keyword">interface</span> <span class="hljs-title">IMyInterface</span>
         {
-            int MyInt { get; set; }
+            <span class="hljs-keyword">int</span> MyInt { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
         }
 </code></pre>
 <p>&#x2003;&#x2003;&#x5176;&#x4E2D; <code>int</code> &#x5C5E;&#x6027; <code>MyInt</code> &#x6709; <code>get</code> &#x548C; <code>set</code> &#x5B58;&#x53D6;&#x5668;&#x3002;&#x5BF9;&#x4E8E;&#x8BBF;&#x95EE;&#x7EA7;&#x522B;&#x6709;&#x4E25;&#x683C;&#x9650;&#x5236;&#x7684;&#x5C5E;&#x6027;&#x6765;&#x8BF4;&#xFF0C;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x5B83;&#x4EEC;&#x7684;&#x4EFB;&#x4E00;&#x4E2A;&#x3002;</p>
@@ -3156,24 +3160,24 @@
 <p>&#x2003;&#x2003;&#x63A5;&#x53E3;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x5E94;&#x5982;&#x4F55;&#x5B58;&#x50A8;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x3002;&#x63A5;&#x53E3;&#x4E0D;&#x80FD;&#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#xFF0C;&#x4F8B;&#x5982;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x7684;&#x5B57;&#x6BB5;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x63A5;&#x53E3;&#x4E0E;&#x7C7B;&#x4E00;&#x6837;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x4E3A;&#x7C7B;&#x7684;&#x6210;&#x5458;&#xFF08;&#x4F46;&#x4E0D;&#x80FD;&#x5B9A;&#x4E49;&#x4E3A;&#x5176;&#x4ED6;&#x63A5;&#x53E3;&#x7684;&#x6210;&#x5458;&#xFF0C;&#x56E0;&#x4E3A;&#x63A5;&#x53E3;&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#xFF09;&#x3002;</p>
 <p><strong>&#x5728;&#x7C7B;&#x4E2D;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;</strong></p>
 <p>&#x2003;&#x2003;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x7684;&#x7C7B;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x8BE5;&#x63A5;&#x53E3;&#x6240;&#x6709;&#x6210;&#x5458;&#x7684;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#xFF0C;&#x4E14;&#x5FC5;&#x987B;&#x5339;&#x914D;&#x6307;&#x5B9A;&#x7684;&#x7B7E;&#x540D;&#xFF08;&#x5305;&#x62EC;&#x5339;&#x914D;&#x6307;&#x5B9A;&#x7684; <code>get</code> &#x548C; <code>set</code> &#x5757;&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x5FC5;&#x987B;&#x662F;&#x516C;&#x5171;&#x7684;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-javascript">        public interface IMyInterface
+<pre><code class="lang-csharp">        <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title">IMyInterface</span>
         {
-            void DoSomething();
-            void DoSomethingElse();
+            <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">DoSomething</span>(<span class="hljs-params"></span>)</span>;
+            <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">DoSomethingElse</span>(<span class="hljs-params"></span>)</span>;
         }
 
-        public class MyClass : IMyInterface
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span> : <span class="hljs-title">IMyInterface</span>
         {
-            public void DoSomething()
-            {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">DoSomething</span>(<span class="hljs-params"></span>)
+            </span>{
             }
-            public void DoSomethingElse()
-            {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">DoSomethingElse</span>(<span class="hljs-params"></span>)
+            </span>{
             }
         }
 </code></pre>
-<p>&#x2003;&#x2003;&#x53EF;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57; <code>virtual</code> &#x6216; <code>abstract</code> &#x6765;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x6210;&#x5458;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; <code>static</code> &#x6216; <code>const</code>&#x3002;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;&#x57FA;&#x7C7B;&#x4E0A;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x6210;&#x5458;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-javascript">        public interfce IMyInterface
+<p>&#x2003;&#x2003;<strong>&#x53EF;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57; <code>virtual</code> &#x6216; <code>abstract</code> &#x6765;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x6210;&#x5458;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; <code>static</code> &#x6216; <code>const</code>&#x3002;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;&#x57FA;&#x7C7B;&#x4E0A;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x6210;&#x5458;</strong>&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-csharp">        public interfce IMyInterface
         {
             void DoSomething();
             void DoSomethingElse();
@@ -3193,66 +3197,66 @@
         }
 </code></pre>
 <p>&#x2003;&#x2003;&#x7EE7;&#x627F;&#x4E00;&#x4E2A;&#x5B9E;&#x73B0;&#x7ED9;&#x5B9A;&#x63A5;&#x53E3;&#x7684;&#x57FA;&#x7C7B;&#xFF0C;&#x5C31;&#x610F;&#x5473;&#x7740;&#x6D3E;&#x751F;&#x7C7B;&#x9690;&#x5F0F;&#x5730;&#x652F;&#x6301;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-javascript">        public interface IMyInterface
+<pre><code class="lang-csharp">        <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title">IMyInterface</span>
         {
-            void DoSomething();
-            void DoSomethingElse();
+            <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">DoSomething</span>(<span class="hljs-params"></span>)</span>;
+            <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">DoSomethingElse</span>(<span class="hljs-params"></span>)</span>;
         }
 
-        public class MyBaseClass : IMyInterface
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">MyBaseClass</span> : <span class="hljs-title">IMyInterface</span>
         {
-            public virtual void DoSomething()
-            {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">DoSomething</span>(<span class="hljs-params"></span>)
+            </span>{
             }
-            public virtual void DoSomethingElse()
-            {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">DoSomethingElse</span>(<span class="hljs-params"></span>)
+            </span>{
             }
         }
 
-        public class MyDerivedClass : MyBaseClass
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">MyDerivedClass</span> : <span class="hljs-title">MyBaseClass</span>
         {
-            public override void DoSomething()
-            {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">DoSomething</span>(<span class="hljs-params"></span>)
+            </span>{
             }
         }
 </code></pre>
 <p>&#x2003;&#x2003;&#x663E;&#x7136;&#xFF0C;&#x5728;&#x57FA;&#x7C7B;&#x4E2D;&#x628A;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x5B9A;&#x4E49;&#x4E3A;&#x865A;&#x62DF;&#xFF0C;&#x6D3E;&#x751F;&#x7C7B;&#x5C31;&#x53EF;&#x4EE5;&#x66FF;&#x6362;&#x8BE5;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x9690;&#x85CF;&#x5B83;&#x4EEC;&#x3002;&#x5982;&#x679C;&#x8981;&#x4F7F;&#x7528; <code>new</code> &#x5173;&#x952E;&#x5B57;&#x9690;&#x85CF;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#x6210;&#x5458;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x91CD;&#x5199;&#x5B83;&#xFF0C;&#x5219;&#x65B9;&#x6CD5; <code>IMyInterface.DoSomething()</code> &#x5C31;&#x603B;&#x662F;&#x5F15;&#x7528;&#x57FA;&#x7C7B;&#x7248;&#x672C;&#xFF0C;&#x5373;&#x4F7F;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x6765;&#x8BBF;&#x95EE;&#x6D3E;&#x751F;&#x7C7B;&#xFF0C;&#x4E5F;&#x662F;&#x8FD9;&#x6837;&#x3002;</p>
 <p>&#x2003;&#x2003;<strong>1. &#x663E;&#x5F0F;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x6210;&#x5458;</strong></p>
-<p>&#x2003;&#x2003;&#x4E5F;&#x53EF;&#x4EE5;&#x7531;&#x7C7B;&#x663E;&#x5F0F;&#x5730;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x6210;&#x5458;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E48;&#x505A;&#xFF0C;&#x5C31;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x6765;&#x8BBF;&#x95EE;&#x8BE5;&#x6210;&#x5458;&#xFF0C;&#x4E0D;&#x80FD;&#x901A;&#x8FC7;&#x7C7B;&#x6765;&#x8BBF;&#x95EE;&#x3002;&#x4E0A;&#x4E00;&#x8282;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x9690;&#x5F0F;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7C7B;&#x548C;&#x63A5;&#x53E3;&#x6765;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>&#x2003;&#x2003;<strong>&#x4E5F;&#x53EF;&#x4EE5;&#x7531;&#x7C7B;&#x663E;&#x5F0F;&#x5730;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x6210;&#x5458;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E48;&#x505A;&#xFF0C;&#x5C31;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x63A5;&#x53E3;&#x6765;&#x8BBF;&#x95EE;&#x8BE5;&#x6210;&#x5458;&#xFF0C;&#x4E0D;&#x80FD;&#x901A;&#x8FC7;&#x7C7B;&#x6765;&#x8BBF;&#x95EE;</strong>&#x3002;&#x4E0A;&#x4E00;&#x8282;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x9690;&#x5F0F;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7C7B;&#x548C;&#x63A5;&#x53E3;&#x6765;&#x8BBF;&#x95EE;&#x3002;</p>
 <p>&#x2003;&#x2003;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x7C7B; <code>MyClass</code> &#x9690;&#x5F0F;&#x5730;&#x5B9E;&#x73B0;&#x63A5;&#x53E3; <code>IMyInterface</code> &#x7684;&#x65B9;&#x6CD5; <code>DoSomething()</code>&#xFF0C;&#x5982;&#x4E0A;&#x6240;&#x8FF0;&#xFF0C;&#x5219;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x662F;&#x6709;&#x6548;&#x7684;&#xFF1A;</p>
-<pre><code class="lang-javascript">        MyClass myObj = <span class="hljs-keyword">new</span> MyClass();
+<pre><code class="lang-csharp">        MyClass myObj = <span class="hljs-keyword">new</span> MyClass();
         myObj.DoSomething();
 </code></pre>
 <p>&#x2003;&#x2003;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E5F;&#x662F;&#x6709;&#x6548;&#x7684;&#xFF1A;</p>
-<pre><code class="lang-javascript">        MyClass myObj = <span class="hljs-keyword">new</span> MyClass();
+<pre><code class="lang-csharp">        MyClass myObj = <span class="hljs-keyword">new</span> MyClass();
         IMyInterface myInt = myObj;
         myInt.DoSomething();
 </code></pre>
 <p>&#x2003;&#x2003;&#x53E6;&#x5916;&#xFF0C;&#x5982;&#x679C; <code>MyDerviedClass</code> &#x663E;&#x5F0F;&#x5730;&#x5B9E;&#x73B0; <code>DoSomething()</code>&#xFF0C;&#x5C31;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&#x540E;&#x4E00;&#x79CD;&#x6280;&#x672F;&#x3002;&#x5176;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-javascript">        public class Myclass : IMyInterface
+<pre><code class="lang-csharp">        <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Myclass</span> : <span class="hljs-title">IMyInterface</span>
         {
-            void IMyInterface.DoSomething()
+            <span class="hljs-keyword">void</span> IMyInterface.DoSomething()
             {
             }
-            public void DoSomethingElse()
-            {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">DoSomethingElse</span>(<span class="hljs-params"></span>)
+            </span>{
             }
         }
 </code></pre>
 <p>&#x2003;&#x2003;&#x5176;&#x4E2D; <code>DoSomething()</code> &#x662F;&#x663E;&#x5F0F;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x800C; <code>DoSomethingElse()</code> &#x662F;&#x9690;&#x5F0F;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x53EA;&#x6709;&#x540E;&#x8005;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x901A;&#x8FC7; <code>MyClass</code> &#x7684;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x6765;&#x8BBF;&#x95EE;&#x3002;</p>
 <p>&#x2003;&#x2003;<strong>2. &#x5176;&#x4ED6;&#x5C5E;&#x6027;&#x5B58;&#x53D6;&#x5668;</strong></p>
-<p>&#x2003;&#x2003;&#x524D;&#x9762;&#x8BF4;&#x8FC7;&#xFF0C;&#x5982;&#x679C;&#x5B9E;&#x73B0;&#x5E26;&#x5C5E;&#x6027;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;&#x5339;&#x914D;&#x7684; <code>get/set</code> &#x5B58;&#x53D6;&#x5668;&#x3002;&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x7EDD;&#x5BF9;&#x6B63;&#x786E;&#x7684;--&#x5982;&#x679C;&#x5728;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x7684;&#x63A5;&#x53E3;&#x4E2D;&#x53EA;&#x5305;&#x542B; <code>set</code> &#x5757;&#xFF0C;&#x5C31;&#x53EF;&#x7ED9;&#x7C7B;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x6DFB;&#x52A0; <code>get</code> &#x5757;&#xFF0C;&#x53CD;&#x4E4B;&#x4EA6;&#x7136;&#x3002;&#x4F46;&#x53EA;&#x6709;&#x9690;&#x5F0F;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x65F6;&#x624D;&#x8FD9;&#x4E2A;&#x505A;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x5927;&#x591A;&#x6570;&#x65F6;&#x5019;&#xFF0C;&#x90FD;&#x60F3;&#x8BA9;&#x6240;&#x6DFB;&#x52A0;&#x7684;&#x5B58;&#x53D6;&#x5668;&#x7684;&#x53EF;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&#x6BD4;&#x63A5;&#x53E3;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x5B58;&#x53D6;&#x5668;&#x7684;&#x53EF;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&#x66F4;&#x4E25;&#x683C;&#x3002;&#x56E0;&#x4E3A;&#x6309;&#x7167;&#x5B9A;&#x4E49;&#xFF0C;&#x63A5;&#x53E3;&#x5B9A;&#x4E49;&#x7684;&#x5B58;&#x53D6;&#x5668;&#x662F;&#x516C;&#x5171;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x53EA;&#x80FD;&#x6DFB;&#x52A0;&#x975E;&#x516C;&#x5171;&#x7684;&#x5B58;&#x53D6;&#x5668;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-javascript">        public interface IMyInterface
+<p>&#x2003;&#x2003;&#x524D;&#x9762;&#x8BF4;&#x8FC7;&#xFF0C;&#x5982;&#x679C;&#x5B9E;&#x73B0;&#x5E26;&#x5C5E;&#x6027;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;&#x5339;&#x914D;&#x7684; <code>get/set</code> &#x5B58;&#x53D6;&#x5668;&#x3002;&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x7EDD;&#x5BF9;&#x6B63;&#x786E;&#x7684;--<strong>&#x5982;&#x679C;&#x5728;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x7684;&#x63A5;&#x53E3;&#x4E2D;&#x53EA;&#x5305;&#x542B; <code>set</code> &#x5757;&#xFF0C;&#x5C31;&#x53EF;&#x7ED9;&#x7C7B;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x6DFB;&#x52A0; <code>get</code> &#x5757;&#xFF0C;&#x53CD;&#x4E4B;&#x4EA6;&#x7136;&#x3002;&#x4F46;&#x53EA;&#x6709;&#x9690;&#x5F0F;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x65F6;&#x624D;&#x8FD9;&#x4E48;&#x505A;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x5927;&#x591A;&#x6570;&#x65F6;&#x5019;&#xFF0C;&#x90FD;&#x60F3;&#x8BA9;&#x6240;&#x6DFB;&#x52A0;&#x7684;&#x5B58;&#x53D6;&#x5668;&#x7684;&#x53EF;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&#x6BD4;&#x63A5;&#x53E3;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x5B58;&#x53D6;&#x5668;&#x7684;&#x53EF;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&#x66F4;&#x4E25;&#x683C;</strong>&#x3002;&#x56E0;&#x4E3A;&#x6309;&#x7167;&#x5B9A;&#x4E49;&#xFF0C;&#x63A5;&#x53E3;&#x5B9A;&#x4E49;&#x7684;&#x5B58;&#x53D6;&#x5668;&#x662F;&#x516C;&#x5171;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;<strong>&#x53EA;&#x80FD;&#x6DFB;&#x52A0;&#x975E;&#x516C;&#x5171;&#x7684;&#x5B58;&#x53D6;&#x5668;</strong>&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-csharp">        <span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title">IMyInterface</span>
         {
-            int MyIntProperty
+            <span class="hljs-keyword">int</span> MyIntProperty
             {
-                get;
+                <span class="hljs-keyword">get</span>;
             }
         }
 
-        public class MyBaseClass : IMyInterface
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">MyBaseClass</span> : <span class="hljs-title">IMyInterface</span>
         {
-            public int MyIntProperty { get; protected set; }
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> MyIntProperty { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">protected</span> <span class="hljs-keyword">set</span>; }
         }
 </code></pre>
 <p>&#x2003;&#x2003;&#x5982;&#x679C;&#x5C06;&#x65B0;&#x6DFB;&#x52A0;&#x7684;&#x5B58;&#x53D6;&#x5668;&#x5B9A;&#x4E49;&#x4E3A;&#x516C;&#x5171;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x80FD;&#x591F;&#x8BBF;&#x95EE;&#x5B9E;&#x73B0;&#x8BE5;&#x63A5;&#x53E3;&#x7684;&#x7C7B;&#x7684;&#x4EE3;&#x7801;&#x9875;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x8BE5;&#x5B58;&#x53D6;&#x5668;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x53EA;&#x80FD;&#x8BBF;&#x95EE;&#x63A5;&#x53E3;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#x8BE5;&#x5B58;&#x53D6;&#x5668;&#x3002;</p>
@@ -3284,7 +3288,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"10.3 接口的实现","level":"1.11.3","depth":2,"next":{"title":"10.4 部分类定义","level":"1.11.4","depth":2,"path":"第10章 定义类成员/104-部分类定义.md","ref":"第10章 定义类成员/104-部分类定义.md","articles":[]},"previous":{"title":"10.2.3 嵌套的类型定义","level":"1.11.2.3","depth":3,"path":"第10章 定义类成员/1023-嵌套的类型定义.md","ref":"第10章 定义类成员/1023-嵌套的类型定义.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","dirction":"沈军","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"C#入门经典最新版","language":"zh-cn","gitbook":">=2.0.0","description":"本书内容作为学习 Unity 的语言基础"},"file":{"path":"第10章 定义类成员/103-接口的实现.md","mtime":"2016-11-06T05:59:42.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-17T13:16:28.153Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"10.3 接口的实现","level":"1.11.3","depth":2,"next":{"title":"10.4 部分类定义","level":"1.11.4","depth":2,"path":"第10章 定义类成员/104-部分类定义.md","ref":"第10章 定义类成员/104-部分类定义.md","articles":[]},"previous":{"title":"10.2.3 嵌套的类型定义","level":"1.11.2.3","depth":3,"path":"第10章 定义类成员/1023-嵌套的类型定义.md","ref":"第10章 定义类成员/1023-嵌套的类型定义.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","dirction":"沈军","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"博军一笑的个人主页","language":"zh-cn","gitbook":">=2.0.0","description":"天道酬勤"},"file":{"path":"第10章 定义类成员/103-接口的实现.md","mtime":"2017-03-19T04:40:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-19T11:09:05.922Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

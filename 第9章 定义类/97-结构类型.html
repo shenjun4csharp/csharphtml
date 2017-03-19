@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>9.7 结构类型 · C#入门经典最新版</title>
+        <title>9.7 结构类型 · 博军一笑的个人主页</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -2280,27 +2280,27 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.1.8" >
+        <li class="chapter " data-level="1.12.1.8" data-path="../第11章 集合、比较和转换/1118-shen-du-fu-zhi.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/1118-shen-du-fu-zhi.html">
             
                     
                     11.1.8 深度复制
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.12.1.9" >
+        <li class="chapter " data-level="1.12.1.9" data-path="../第11章 集合、比较和转换/1119-gei-cardlib-tian-jia-shen-du-fu-zhi.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/1119-gei-cardlib-tian-jia-shen-du-fu-zhi.html">
             
                     
                     11.1.9 给CardLib添加深度复制
             
-                </span>
+                </a>
             
 
             
@@ -2311,41 +2311,41 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.2" >
+        <li class="chapter " data-level="1.12.2" data-path="../第11章 集合、比较和转换/112-bi-jiao.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/112-bi-jiao.html">
             
                     
                     11.2 比较
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.12.2.1" >
+        <li class="chapter " data-level="1.12.2.1" data-path="../第11章 集合、比较和转换/112-bi-jiao/1121-lei-xing-bi-jiao.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/112-bi-jiao/1121-lei-xing-bi-jiao.html">
             
                     
                     11.2.1 类型比较
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.12.2.2" >
+        <li class="chapter " data-level="1.12.2.2" data-path="../第11章 集合、比较和转换/112-bi-jiao/1122-zhi-bi-jiao.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/112-bi-jiao/1122-zhi-bi-jiao.html">
             
                     
                     11.2.2 值比较
             
-                </span>
+                </a>
             
 
             
@@ -3125,22 +3125,22 @@
 </blockquote>
 <p>&#x2003;&#x2003;&#xFF08;1&#xFF09;&#x5728; <code>C:\BegVCSharp\Chapter09</code> &#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x63A7;&#x5236;&#x53F0;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x9879;&#x76EE; <code>Ch09Ex03</code>&#x3002;</p>
 <p>&#x2003;&#x2003;&#xFF08;2&#xFF09;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
-<pre><code class="lang-javascript">        namespace Ch09Ex03
+<pre><code class="lang-csharp">        <span class="hljs-keyword">namespace</span> <span class="hljs-title">Ch09Ex03</span>
         {
-            <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span>
-            </span>{
-                public int val;
-            }
-
-            struct myStruct
+            <span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span>
             {
-                public int val;
+                <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> val;
             }
 
-            <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
-            </span>{
-                <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> Main(string[] args)
-                {
+            <span class="hljs-keyword">struct</span> myStruct
+            {
+                <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> val;
+            }
+
+            <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+            {
+                <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+                </span>{
                     MyClass objectA = <span class="hljs-keyword">new</span> MyClass();
                     MyClass objectB = objectA;
                     objectA.val = <span class="hljs-number">10</span>;
@@ -3173,11 +3173,11 @@
 <p>&#x2003;&#x2003;&#xFF08;7&#xFF09;&#x663E;&#x793A;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x7684; <code>val</code> &#x5B57;&#x6BB5;&#x503C;&#x3002;</p>
 <p>&#x2003;&#x2003;&#x5C3D;&#x7BA1;&#x5BF9;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x6267;&#x884C;&#x4E86;&#x76F8;&#x540C;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x7ED3;&#x679C;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x3002;&#x5728;&#x663E;&#x793A; <code>val</code> &#x5B57;&#x6BB5;&#x7684;&#x503C;&#x65F6;&#xFF0C;&#x4E24;&#x4E2A; <code>object</code> &#x7C7B;&#x578B;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x7ED3;&#x6784;&#x7C7B;&#x578B;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x503C;&#x3002;&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x8FD9;&#x6837;&#xFF1F;</p>
 <p>&#x2003;&#x2003;&#x5BF9;&#x8C61;&#x662F;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x3002;&#x5728;&#x628A;&#x5BF9;&#x8C61;&#x8D4B;&#x7ED9;&#x53D8;&#x91CF;&#x65F6;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x628A;&#x5E26;&#x6709;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#x7684;&#x53D8;&#x91CF;&#x8D4B;&#x7ED9;&#x4E86;&#x8BE5;&#x6307;&#x9488;&#x6240;&#x6307;&#x5411;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x5728;&#x5B9E;&#x9645;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6307;&#x9488;&#x662F;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5730;&#x5740;&#x662F;&#x5185;&#x5B58;&#x4E2D;&#x8BE5;&#x5BF9;&#x8C61;&#x6240;&#x5728;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x5728;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x884C;&#x628A;&#x7B2C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5F15;&#x7528;&#x8D4B;&#x7ED9;&#x7C7B;&#x578B;&#x4E3A; <code>MyClass</code> &#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53D8;&#x91CF;&#x65F6;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x590D;&#x5236;&#x4E86;&#x8FD9;&#x4E2A;&#x5730;&#x5740;&#x3002;</p>
-<pre><code class="lang-javascript">        MyClass objectB = objectA;
+<pre><code class="lang-csharp">        MyClass objectB = objectA;
 </code></pre>
 <p>&#x2003;&#x2003;&#x8FD9;&#x6837;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x5C31;&#x5305;&#x542B;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x6307;&#x9488;&#x3002;</p>
 <p>&#x2003;&#x2003;&#x7ED3;&#x6784;&#x662F;&#x503C;&#x7C7B;&#x578B;&#x3002;&#x5176;&#x53D8;&#x91CF;&#x5E76;&#x4E0D;&#x662F;&#x5305;&#x542B;&#x7ED3;&#x6784;&#x7684;&#x6307;&#x9488;&#xFF0C;&#x800C;&#x662F;&#x5305;&#x542B;&#x7ED3;&#x6784;&#x672C;&#x8EAB;&#x3002;&#x5728;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x628A;&#x7B2C;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x8D4B;&#x7ED9;&#x7C7B;&#x578B;&#x4E3A; <code>myStruct</code> &#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53D8;&#x91CF;&#x65F6;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x628A;&#x7B2C;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x606F;&#x590D;&#x5236;&#x5230;&#x7B2C;&#x4E8C;&#x4E2A;&#x7ED3;&#x6784;&#x4E2D;&#x3002;</p>
-<pre><code class="lang-javascript">        myStruct structB = structA;
+<pre><code class="lang-csharp">        myStruct structB = structA;
 </code></pre>
 <p>&#x2003;&#x2003;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E0E;&#x672C;&#x4E66;&#x524D;&#x9762;&#x4ECB;&#x7ECD;&#x7684;&#x7B80;&#x5355;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#xFF08;&#x5982; <code>int</code>&#xFF09;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;&#x6700;&#x7EC8;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x4E24;&#x4E2A;&#x7ED3;&#x6784;&#x7C7B;&#x578B;&#x53D8;&#x91CF;&#x5305;&#x542B;&#x4E0D;&#x540C;&#x7684;&#x7ED3;&#x6784;&#x3002;&#x4F7F;&#x7528;&#x6307;&#x9488;&#x7684;&#x5168;&#x90E8;&#x6280;&#x672F;&#x9690;&#x85CF;&#x5728;&#x6258;&#x7BA1; C#&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x8FD9;&#x4F7F;&#x5F97;&#x4EE3;&#x7801;&#x66F4;&#x7B80;&#x5355;&#x3002;&#x5B9E;&#x7528; C#&#x4E2D;&#x7684;&#x4E0D;&#x5B89;&#x5168;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4F4E;&#x7EA7;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x6307;&#x9488;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x9AD8;&#x7EA7;&#x7684;&#x8BBA;&#x9898;&#xFF0C;&#x8FD9;&#x91CC;&#x4E0D;&#x4E88;&#x4EE5;&#x8BA8;&#x8BBA;&#x3002;</p>
 <p>&#x1F51A;</p>
@@ -3208,7 +3208,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"9.7 结构类型","level":"1.10.7","depth":2,"next":{"title":"9.8 浅度和深度复制","level":"1.10.8","depth":2,"path":"第9章 定义类/98-浅度和深度复制.md","ref":"第9章 定义类/98-浅度和深度复制.md","articles":[]},"previous":{"title":"9.6 接口和抽象类","level":"1.10.6","depth":2,"path":"第9章 定义类/96-接口和抽象类.md","ref":"第9章 定义类/96-接口和抽象类.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","dirction":"沈军","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"C#入门经典最新版","language":"zh-cn","gitbook":">=2.0.0","description":"本书内容作为学习 Unity 的语言基础"},"file":{"path":"第9章 定义类/97-结构类型.md","mtime":"2016-11-06T05:59:42.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-17T13:16:28.153Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"9.7 结构类型","level":"1.10.7","depth":2,"next":{"title":"9.8 浅度和深度复制","level":"1.10.8","depth":2,"path":"第9章 定义类/98-浅度和深度复制.md","ref":"第9章 定义类/98-浅度和深度复制.md","articles":[]},"previous":{"title":"9.6 接口和抽象类","level":"1.10.6","depth":2,"path":"第9章 定义类/96-接口和抽象类.md","ref":"第9章 定义类/96-接口和抽象类.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","dirction":"沈军","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"博军一笑的个人主页","language":"zh-cn","gitbook":">=2.0.0","description":"天道酬勤"},"file":{"path":"第9章 定义类/97-结构类型.md","mtime":"2017-03-18T14:27:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-19T11:09:05.922Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>10.6.2 编写类库 · C#入门经典最新版</title>
+        <title>10.6.2 编写类库 · 博军一笑的个人主页</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -2280,27 +2280,27 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.1.8" >
+        <li class="chapter " data-level="1.12.1.8" data-path="../第11章 集合、比较和转换/1118-shen-du-fu-zhi.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/1118-shen-du-fu-zhi.html">
             
                     
                     11.1.8 深度复制
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.12.1.9" >
+        <li class="chapter " data-level="1.12.1.9" data-path="../第11章 集合、比较和转换/1119-gei-cardlib-tian-jia-shen-du-fu-zhi.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/1119-gei-cardlib-tian-jia-shen-du-fu-zhi.html">
             
                     
                     11.1.9 给CardLib添加深度复制
             
-                </span>
+                </a>
             
 
             
@@ -2311,41 +2311,41 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.2" >
+        <li class="chapter " data-level="1.12.2" data-path="../第11章 集合、比较和转换/112-bi-jiao.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/112-bi-jiao.html">
             
                     
                     11.2 比较
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.12.2.1" >
+        <li class="chapter " data-level="1.12.2.1" data-path="../第11章 集合、比较和转换/112-bi-jiao/1121-lei-xing-bi-jiao.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/112-bi-jiao/1121-lei-xing-bi-jiao.html">
             
                     
                     11.2.1 类型比较
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.12.2.2" >
+        <li class="chapter " data-level="1.12.2.2" data-path="../第11章 集合、比较和转换/112-bi-jiao/1122-zhi-bi-jiao.html">
             
-                <span>
+                <a href="../第11章 集合、比较和转换/112-bi-jiao/1122-zhi-bi-jiao.html">
             
                     
                     11.2.2 值比较
             
-                </span>
+                </a>
             
 
             
@@ -3143,14 +3143,14 @@
 <p>&#x2003;&#x2003;<strong>&#x7B2C;&#x4E00;&#x4E2A;&#x6210;&#x5458; <code>Ace</code> &#x7684;&#x8F93;&#x5165;&#x503C;&#x4E3A;1&#xFF0C;&#x5B83;&#x4F1A;&#x4F7F;&#x679A;&#x4E3E;&#x7684;&#x5E95;&#x5C42;&#x5B58;&#x50A8;&#x5339;&#x914D;&#x6251;&#x514B;&#x724C;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x4F8B;&#x5982; <code>Six</code> &#x5C31;&#x5B58;&#x50A8;&#x4E3A; 6&#x3002;</strong></p>
 </blockquote>
 <p>&#x2003;&#x2003;&#x4E3A;&#x8FD9;&#x4E2A;&#x4E24;&#x4E2A;&#x679A;&#x4E3E;&#x751F;&#x6210;&#x7684;&#x4EE3;&#x7801;&#x4F4D;&#x4E8E; <code>Suit.cs</code> &#x548C; <code>Rank.cs</code> &#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x5728; <code>Ch10CardLib</code> &#x6587;&#x4EF6;&#x5939;&#x7684; <code>Suit.cs</code> &#x6587;&#x4EF6;&#x4E2D;&#x53EF;&#x4EE5;&#x627E;&#x5230; <code>Suit</code> &#x679A;&#x4E3E;&#x7684;&#x5B8C;&#x6574;&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
-<pre><code class="lang-javascript">        using System;
-        using System.Collections.Generic;
-        using System.Linq;
-        using System.Text;
+<pre><code class="lang-csharp">        <span class="hljs-keyword">using</span> System;
+        <span class="hljs-keyword">using</span> System.Collections.Generic;
+        <span class="hljs-keyword">using</span> System.Linq;
+        <span class="hljs-keyword">using</span> System.Text;
 
-        namespace Ch10CardLib
+        <span class="hljs-keyword">namespace</span> <span class="hljs-title">Ch10CardLib</span>
         {
-            public enum Suit
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Suit
             {
                 Club,
                 Diamond,
@@ -3160,14 +3160,14 @@
         }
 </code></pre>
 <p>&#x2003;&#x2003;&#x5728; <code>Ch10CardLib</code> &#x6587;&#x4EF6;&#x5939;&#x7684; <code>Rank.cs</code> &#x6587;&#x4EF6;&#x4E2D;&#x53EF;&#x4EE5;&#x627E;&#x5230; <code>Rank</code> &#x679A;&#x4E3E;&#x7684;&#x5B8C;&#x6574;&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
-<pre><code class="lang-javascript">        using System;
-        using System.Collections.Generic;
-        using System.Linq;
-        using System.Text;
+<pre><code class="lang-csharp">        <span class="hljs-keyword">using</span> System;
+        <span class="hljs-keyword">using</span> System.Collections.Generic;
+        <span class="hljs-keyword">using</span> System.Linq;
+        <span class="hljs-keyword">using</span> System.Text;
 
-        namespace Ch10CardLib
+        <span class="hljs-keyword">namespace</span> <span class="hljs-title">Ch10CardLib</span>
         {
-            public enem Rank
+            <span class="hljs-keyword">public</span> enem Rank
             {
                 Ace = <span class="hljs-number">1</span>,
                 Deuce,
@@ -3193,22 +3193,22 @@
 <p><img src="../assets/10-14.png" alt="&#x56FE; 10-14">
 <strong><code>&#x56FE; 10-14</code></strong></p>
 <p>&#x2003;&#x2003;&#x7136;&#x540E;&#x9700;&#x8981;&#x4FEE;&#x6539; <code>Card.cs</code> &#x4E2D;&#x7C7B;&#x7684;&#x4EE3;&#x7801;&#xFF08;&#x6216;&#x8005;&#x628A;&#x8FD9;&#x4E9B;&#x4EE3;&#x7801;&#x6DFB;&#x52A0;&#x5230;&#x540D;&#x79F0;&#x7A7A;&#x95F4; <code>Ch10CardLib</code> &#x7684;&#x65B0;&#x7C7B; <code>Card</code> &#x4E2D;&#xFF09;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
-<pre><code class="lang-javascript">        public <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span>
-        </span>{
-            public readonly Suit suit;
-            public readonly Rank rank;
+<pre><code class="lang-csharp">        <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Card</span>
+        {
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">readonly</span> Suit suit;
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">readonly</span> Rank rank;
         }
 
-        private Card() { }
+        <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Card</span>(<span class="hljs-params"></span>) </span>{ }
 
-        public Card(Suit newSuit, Rank, newRank)
-        {
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Card</span>(<span class="hljs-params">Suit newSuit, Rank, newRank</span>)
+        </span>{
             suit = newSuit;
             rank = newRank;
         }
 
-        public override string ToString()
-        {
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">string</span> <span class="hljs-title">ToString</span>(<span class="hljs-params"></span>)
+        </span>{
             <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;The &quot;</span> + rank + <span class="hljs-string">&quot; of &quot;</span> + suit + <span class="hljs-string">&quot;s&quot;</span>;
         }
 </code></pre>
@@ -3229,25 +3229,25 @@
 <p><img src="../assets/10-16.png" alt="&#x56FE; 10-16">
 <strong><code>&#x56FE; 10-16</code></strong></p>
 <p>&#x2003;&#x2003;&#x63A5;&#x7740;&#x4FEE;&#x6539; <code>Deck.cs</code> &#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF08;&#x5982;&#x679C;&#x4E0D;&#x4F7F;&#x7528;&#x7C7B;&#x8BBE;&#x8BA1;&#x5668;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x9996;&#x5148;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x6DFB;&#x52A0;&#x8FD9;&#x4E2A;&#x7C7B;&#xFF09;&#x3002;&#x8FD9;&#x4E9B;&#x4EE3;&#x7801;&#x5305;&#x542B;&#x5B50;&#x5728; <code>Ch10CardLib\Deck.cs</code> &#x4E2D;&#x3002;&#x9996;&#x5148;&#x5B9E;&#x73B0;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x5728; <code>cards</code> &#x5B57;&#x6BB5;&#x4E2D;&#x521B;&#x5EFA; 52 &#x5F20;&#x724C;&#xFF0C;&#x5E76;&#x7ED9;&#x5B83;&#x4EEC;&#x8D4B;&#x503C;&#x3002;&#x5BF9;&#x4E24;&#x4E2A;&#x679A;&#x4E3E;&#x7684;&#x6240;&#x6709;&#x7EC4;&#x5408;&#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#xFF0C;&#x6BCF;&#x6B21;&#x8FED;&#x4EE3;&#x90FD;&#x521B;&#x5EFA;&#x4E00;&#x5F20;&#x724C;&#x3002;&#x8FD9;&#x5C06;&#x4F7F; <code>cards</code> &#x6700;&#x521D;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x6709;&#x5E8F;&#x7684;&#x6251;&#x514B;&#x724C;&#x5217;&#x8868;&#xFF1A;</p>
-<pre><code class="lang-javascript">        using System; 
-        using System.Collections.Generic; 
-        using System.Linq; using System.Text; 
-        using System.Threading.Tasks;
+<pre><code class="lang-csharp">        <span class="hljs-keyword">using</span> System; 
+        <span class="hljs-keyword">using</span> System.Collections.Generic; 
+        <span class="hljs-keyword">using</span> System.Linq; <span class="hljs-keyword">using</span> System.Text; 
+        <span class="hljs-keyword">using</span> System.Threading.Tasks;
 
 
-        namespace Ch10CardLib 
+        <span class="hljs-keyword">namespace</span> <span class="hljs-title">Ch10CardLib</span> 
         { 
-            public <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Deck</span> 
-            </span>{ 
-                private Card[] cards;
+            <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Deck</span> 
+            { 
+                <span class="hljs-keyword">private</span> Card[] cards;
 
 
-                public Deck() 
-                { 
+                <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Deck</span>(<span class="hljs-params"></span>) 
+                </span>{ 
                     cards = <span class="hljs-keyword">new</span> Card[<span class="hljs-number">52</span>]; 
-                    <span class="hljs-keyword">for</span> (int suitVal = <span class="hljs-number">0</span>; suitVal &lt; <span class="hljs-number">4</span>; suitVal++) 
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> suitVal = <span class="hljs-number">0</span>; suitVal &lt; <span class="hljs-number">4</span>; suitVal++) 
                     { 
-                        <span class="hljs-keyword">for</span> (int rankVal = <span class="hljs-number">1</span>; rankVal &lt; <span class="hljs-number">14</span>; rankVal++) 
+                        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> rankVal = <span class="hljs-number">1</span>; rankVal &lt; <span class="hljs-number">14</span>; rankVal++) 
                         { 
                             cards[suitVal * <span class="hljs-number">13</span> + rankVal - <span class="hljs-number">1</span>] = <span class="hljs-keyword">new</span> Card((Suit)suitVal, (Rank)rankVal); 
                         } 
@@ -3257,33 +3257,33 @@
         }
 </code></pre>
 <p>&#x2003;&#x2003;&#x7136;&#x540E;&#x5B9E;&#x73B0; <code>GetCard()</code> &#x65B9;&#x6CD5;&#xFF0C;&#x4E3A;&#x6307;&#x5B9A;&#x7684;&#x7D22;&#x5F15;&#x8FD4;&#x56DE; <code>Card</code> &#x5BF9;&#x8C61;&#xFF0C;&#x6216;&#x8005;&#x4EE5;&#x4E0E;&#x524D;&#x9762;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#xFF1A;</p>
-<pre><code class="lang-javascript">        public Card GetCard(int cardNum) 
-        { 
+<pre><code class="lang-csharp">        <span class="hljs-function"><span class="hljs-keyword">public</span> Card <span class="hljs-title">GetCard</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> cardNum</span>) 
+        </span>{ 
             <span class="hljs-keyword">if</span> (cardNum &gt;= <span class="hljs-number">0</span> &amp;&amp; cardnum &lt;= <span class="hljs-number">51</span>) 
                 <span class="hljs-keyword">return</span> cards[cardNum]; 
-            <span class="hljs-keyword">else</span> 
-                <span class="hljs-keyword">throw</span> (<span class="hljs-keyword">new</span> System.ArgumentOutOfRangeException(<span class="hljs-string">&quot;cardNum&quot;</span>, cardNum, <span class="hljs-string">&quot;Value must be between 0 and 51.&quot;</span>)); 
+            <span class="hljs-function"><span class="hljs-keyword">else</span> 
+                <span class="hljs-title">throw</span> (<span class="hljs-params">new System.ArgumentOutOfRangeException(<span class="hljs-string">&quot;cardNum&quot;</span>, cardNum, <span class="hljs-string">&quot;Value must be between 0 and 51.&quot;</span></span>))</span>; 
         }
 </code></pre>
 <p>&#x2003;&#x2003;&#x6700;&#x540E;&#x5B9E;&#x73B0; <code>Shuffle()</code> &#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;&#x7684;&#x6251;&#x514B;&#x724C;&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x628A;&#x6251;&#x514B;&#x724C;&#x4ECE;&#x73B0;&#x5728;&#x7684; <code>cards</code> &#x6570;&#x7EC4;&#x968F;&#x673A;&#x590D;&#x5236;&#x5230;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x4E3B;&#x4F53;&#x662F;&#x4E00;&#x4E2A;&#x4ECE; 0&#xFF5E;51 &#x7684;&#x5FAA;&#x73AF;&#xFF0C;&#x5728;&#x6BCF;&#x6B21;&#x5FAA;&#x73AF;&#x65F6;&#xFF0C;&#x90FD;&#x4F1A;&#x4F7F;&#x7528; .NET Framework &#x4E2D; System.Random &#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x751F;&#x6210;&#x4E00;&#x4E2A; 0&#xFF5E;51 &#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x6570;&#x3002;&#x8FDB;&#x884C;&#x4E86;&#x5B9E;&#x4F8B;&#x5316;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x4F7F;&#x7528;&#x65B9;&#x6CD5; <code>Next(X)</code> &#x751F;&#x6210;&#x4E00;&#x4E2A;&#x4ECB;&#x4E8E; 0&#xFF5E;X &#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x6570;&#x3002;&#x6709;&#x4E86;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x4F5C;&#x4E3A;&#x4E34;&#x65F6;&#x6570;&#x7EC4;&#x4E2D; <code>Card</code> &#x5BF9;&#x8C61;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x4EE5;&#x4FBF;&#x590D;&#x5236; <code>cards</code> &#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6251;&#x514B;&#x724C;&#x3002;</p>
 <p>&#x2003;&#x2003;&#x4E3A;&#x4E86;&#x8BB0;&#x5F55;&#x5DF2;&#x8D4B;&#x503C;&#x7684;&#x6251;&#x514B;&#x724C;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x6709;&#x4E00;&#x4E2A; <code>bool</code> &#x53D8;&#x91CF;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5728;&#x590D;&#x5236;&#x6BCF;&#x5F20;&#x724C;&#x65F6;&#xFF0C;&#x628A;&#x8BE5;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x503C;&#x6307;&#x5B9A;&#x4E3A; <code>true</code>&#x3002;&#x5728;&#x751F;&#x6210;&#x968F;&#x673A;&#x6570;&#x65F6;&#xFF0C;&#x68C0;&#x67E5;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x770B;&#x770B;&#x65F6;&#x5426;&#x5DF2;&#x7ECF;&#x628A;&#x4E00;&#x5F20;&#x724C;&#x590D;&#x5236;&#x5230;&#x4E34;&#x65F6;&#x6570;&#x7EC4;&#x4E2D;&#x7531;&#x968F;&#x673A;&#x6570;&#x6307;&#x5B9A;&#x7684;&#x4F4D;&#x7F6E;&#x4E0A;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x590D;&#x5236;&#xFF0C;&#x5C06;&#x751F;&#x6210;&#x53E6;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570;&#x3002;</p>
 <p>&#x2003;&#x2003;&#x8FD9;&#x4E0D;&#x662F;&#x5B8C;&#x6210;&#x8BE5;&#x4EFB;&#x52A1;&#x7684;&#x6700;&#x9AD8;&#x6548;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x56E0;&#x4E3A;&#x751F;&#x6210;&#x7684;&#x8BB8;&#x591A;&#x968F;&#x673A;&#x6570;&#x90FD;&#x53EF;&#x80FD;&#x627E;&#x4E0D;&#x5230;&#x7A7A;&#x4F4D;&#x7F6E;&#x4EE5;&#x590D;&#x5236;&#x6251;&#x514B;&#x724C;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5B83;&#x4ECD;&#x80FD;&#x5B8C;&#x6210;&#x4EFB;&#x52A1;&#xFF0C;&#x800C;&#x4E14;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x56E0;&#x4E3A; C#&#x4EE3;&#x7801;&#x7684;&#x6267;&#x884C;&#x901F;&#x5EA6;&#x5F88;&#x5FEB;&#xFF0C;&#x6211;&#x4EEC;&#x51E0;&#x4E4E;&#x89C9;&#x5BDF;&#x4E0D;&#x5230;&#x5EF6;&#x8FDF;&#x3002;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
-<pre><code class="lang-javascript">        public <span class="hljs-keyword">void</span> Shuffle() 
-        { 
+<pre><code class="lang-csharp">        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Shuffle</span>(<span class="hljs-params"></span>) 
+        </span>{ 
             Card[] newDeck = <span class="hljs-keyword">new</span> Card[<span class="hljs-number">52</span>]; 
-            bool[] assigned = <span class="hljs-keyword">new</span> bool[<span class="hljs-number">52</span>]; 
+            <span class="hljs-keyword">bool</span>[] assigned = <span class="hljs-keyword">new</span> <span class="hljs-keyword">bool</span>[<span class="hljs-number">52</span>]; 
             Random sourceGen = <span class="hljs-keyword">new</span> Random(); 
-            <span class="hljs-keyword">for</span> (int i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">52</span>; i++) 
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">52</span>; i++) 
             { 
-                int destCard = <span class="hljs-number">0</span>; 
-                bool foundCard = <span class="hljs-literal">false</span>; 
-                <span class="hljs-keyword">while</span> (foundCard == <span class="hljs-literal">false</span>) 
+                <span class="hljs-keyword">int</span> destCard = <span class="hljs-number">0</span>; 
+                <span class="hljs-keyword">bool</span> foundCard = <span class="hljs-keyword">false</span>; 
+                <span class="hljs-keyword">while</span> (foundCard == <span class="hljs-keyword">false</span>) 
                 { 
                     destCard = sourceGen.Next(<span class="hljs-number">52</span>); 
-                    <span class="hljs-keyword">if</span> (assigned[destCard] == <span class="hljs-literal">false</span>) 
-                        foundCard = <span class="hljs-literal">true</span>; 
+                    <span class="hljs-keyword">if</span> (assigned[destCard] == <span class="hljs-keyword">false</span>) 
+                        foundCard = <span class="hljs-keyword">true</span>; 
                 } 
-                assigned[destCard] = <span class="hljs-literal">true</span>; 
+                assigned[destCard] = <span class="hljs-keyword">true</span>; 
                 newDeck[destCard] = cards[i]; 
             } 
             newDeck.CopyTo(cards, <span class="hljs-number">0</span>); 
@@ -3319,7 +3319,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"10.6.2 编写类库","level":"1.11.6.2","depth":3,"next":{"title":"10.6.3 类库的客户应用程序","level":"1.11.6.3","depth":3,"path":"第10章 定义类成员/1063-类库的客户应用程序.md","ref":"第10章 定义类成员/1063-类库的客户应用程序.md","articles":[]},"previous":{"title":"10.6.1 规划应用程序","level":"1.11.6.1","depth":3,"path":"第10章 定义类成员/1061-规划应用程序.md","ref":"第10章 定义类成员/1061-规划应用程序.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","dirction":"沈军","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"C#入门经典最新版","language":"zh-cn","gitbook":">=2.0.0","description":"本书内容作为学习 Unity 的语言基础"},"file":{"path":"第10章 定义类成员/1062-编写类库.md","mtime":"2016-11-06T05:59:42.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-17T13:16:28.153Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"10.6.2 编写类库","level":"1.11.6.2","depth":3,"next":{"title":"10.6.3 类库的客户应用程序","level":"1.11.6.3","depth":3,"path":"第10章 定义类成员/1063-类库的客户应用程序.md","ref":"第10章 定义类成员/1063-类库的客户应用程序.md","articles":[]},"previous":{"title":"10.6.1 规划应用程序","level":"1.11.6.1","depth":3,"path":"第10章 定义类成员/1061-规划应用程序.md","ref":"第10章 定义类成员/1061-规划应用程序.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","dirction":"沈军","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"博军一笑的个人主页","language":"zh-cn","gitbook":">=2.0.0","description":"天道酬勤"},"file":{"path":"第10章 定义类成员/1062-编写类库.md","mtime":"2017-03-19T05:46:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-19T11:09:05.922Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
