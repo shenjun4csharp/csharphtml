@@ -55,6 +55,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="147-lambda表达式/1471-fu-xi-ni-ming-fang-fa.html" />
+    
     
     <link rel="prev" href="146-扩展方法.html" />
     
@@ -3019,40 +3021,40 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.15.5.1" >
+        <li class="chapter " data-level="1.15.5.1" data-path="145-高级方法参数/1451-ke-xuan-can-shu.html">
             
-                <span>
+                <a href="145-高级方法参数/1451-ke-xuan-can-shu.html">
             
                     
                     14.5.1 可选参数
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.15.5.2" >
+        <li class="chapter " data-level="1.15.5.2" data-path="145-高级方法参数/1452-ming-ming-can-shu.html">
             
-                <span>
+                <a href="145-高级方法参数/1452-ming-ming-can-shu.html">
             
                     
                     14.5.2 命名参数
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.15.5.3" >
+        <li class="chapter " data-level="1.15.5.3" data-path="145-高级方法参数/1453-ming-ming-can-shu-he-ke-xuan-can-shu-de-gui-ze.html">
             
-                <span>
+                <a href="145-高级方法参数/1453-ming-ming-can-shu-he-ke-xuan-can-shu-de-gui-ze.html">
             
                     
                     14.5.3 命名参数和可选参数的规则
             
-                </span>
+                </a>
             
 
             
@@ -3090,53 +3092,53 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.15.7.1" >
+        <li class="chapter " data-level="1.15.7.1" data-path="147-lambda表达式/1471-fu-xi-ni-ming-fang-fa.html">
             
-                <span>
+                <a href="147-lambda表达式/1471-fu-xi-ni-ming-fang-fa.html">
             
                     
                     14.7.1 复习匿名方法
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.15.7.2" >
+        <li class="chapter " data-level="1.15.7.2" data-path="147-lambda表达式/1472-ba-lambda-biao-da-shi-yong-yu-ni-ming-fang-fa.html">
             
-                <span>
+                <a href="147-lambda表达式/1472-ba-lambda-biao-da-shi-yong-yu-ni-ming-fang-fa.html">
             
                     
                     14.7.2 把Lambda表达式用于匿名方法
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.15.7.3" >
+        <li class="chapter " data-level="1.15.7.3" data-path="147-lambda表达式/1473-lambdabiao-da-shi-de-can-shu.html">
             
-                <span>
+                <a href="147-lambda表达式/1473-lambdabiao-da-shi-de-can-shu.html">
             
                     
                     14.7.3 Lambda表达式的参数
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.15.7.4" >
+        <li class="chapter " data-level="1.15.7.4" data-path="147-lambda表达式/1474-lambdabiao-da-shi-de-yu-ju-ti.html">
             
-                <span>
+                <a href="147-lambda表达式/1474-lambdabiao-da-shi-de-yu-ju-ti.html">
             
                     
                     14.7.4 Lambda表达式的语句体
             
-                </span>
+                </a>
             
 
             
@@ -3285,7 +3287,10 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h2 id="lambda&#x8868;&#x8FBE;&#x5F0F;">Lambda&#x8868;&#x8FBE;&#x5F0F;</h2>
+<p>&#x2003;&#x2003;Lambda&#x8868;&#x8FBE;&#x5F0F;&#x662F;C# 3.0&#x5F15;&#x5165;&#x7684;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x7B80;&#x5316;C#&#x7F16;&#x7A0B;&#x7684;&#x67D0;&#x4E9B;&#x65B9;&#x9762;&#xFF0C;&#x5728;&#x4E0E;LINQ&#x7ED3;&#x5408;&#x4F7F;&#x7528;&#x65F6;&#x5C24;&#x4E3A;&#x65B9;&#x4FBF;&#x3002;Lambda&#x8868;&#x8FBE;&#x5F0F;&#x4E00;&#x5F00;&#x59CB;&#x5F88;&#x96BE;&#x638C;&#x63E1;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x56E0;&#x4E3A;&#x5176;&#x7528;&#x6CD5;&#x975E;&#x5E38;&#x7075;&#x6D3B;&#x3002;Lambda&#x8868;&#x8FBE;&#x5F0F;&#x4E0E;&#x5176;&#x4ED6;C#&#x8BED;&#x8A00;&#x7279;&#x6027;&#xFF08;&#x5982;&#x533F;&#x540D;&#x65B9;&#x6CD5;&#xFF09;&#x7ED3;&#x5408;&#x4F7F;&#x7528;&#x65F6;&#x53CA;&#x5176;&#x6709;&#x7528;&#x3002;&#x7531;&#x4E8E;&#x672C;&#x4E66;&#x540E;&#x9762;&#x624D;&#x4ECB;&#x7ECD;LINQ&#xFF0C;&#x56E0;&#x6B64;&#x533F;&#x540D;&#x65B9;&#x6CD5;&#x662F;&#x4ECB;&#x7ECD;Lambda&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x6700;&#x4F73;&#x5207;&#x5165;&#x70B9;&#x3002;&#x4E0B;&#x9762;&#x9996;&#x5148;&#x6982;&#x8FF0;&#x4E00;&#x4E0B;&#x533F;&#x540D;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x1F51A;</p>
+
                                 
                                 </section>
                             
@@ -3296,10 +3301,14 @@
 
             
                 
-                <a href="146-扩展方法.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 14.6 扩展方法">
+                <a href="146-扩展方法.html" class="navigation navigation-prev " aria-label="Previous page: 14.6 扩展方法">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="147-lambda表达式/1471-fu-xi-ni-ming-fang-fa.html" class="navigation navigation-next " aria-label="Next page: 14.7.1 复习匿名方法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -3308,7 +3317,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"14.7 Lambda表达式","level":"1.15.7","depth":2,"next":{"title":"14.7.1 复习匿名方法","level":"1.15.7.1","depth":3,"ref":"","articles":[]},"previous":{"title":"14.6 扩展方法","level":"1.15.6","depth":2,"path":"第14章 C＃语言的改进/146-扩展方法.md","ref":"第14章 C＃语言的改进/146-扩展方法.md","articles":[]},"dir":"neutral"},"config":{"plugins":["-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","dirction":"沈军","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"博军一笑的个人主页","language":"zh-cn","gitbook":">=2.0.0","description":"天道酬勤"},"file":{"path":"第14章 C＃语言的改进/147-lambda表达式.md","mtime":"2016-11-06T05:44:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-25T16:25:06.800Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"14.7 Lambda表达式","level":"1.15.7","depth":2,"next":{"title":"14.7.1 复习匿名方法","level":"1.15.7.1","depth":3,"path":"第14章 C＃语言的改进/147-lambda表达式/1471-fu-xi-ni-ming-fang-fa.md","ref":"第14章 C＃语言的改进/147-lambda表达式/1471-fu-xi-ni-ming-fang-fa.md","articles":[]},"previous":{"title":"14.6 扩展方法","level":"1.15.6","depth":2,"path":"第14章 C＃语言的改进/146-扩展方法.md","ref":"第14章 C＃语言的改进/146-扩展方法.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","dirction":"沈军","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"博军一笑的个人主页","language":"zh-cn","gitbook":">=2.0.0","description":"天道酬勤"},"file":{"path":"第14章 C＃语言的改进/147-lambda表达式.md","mtime":"2017-03-27T13:24:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-27T14:44:12.126Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
