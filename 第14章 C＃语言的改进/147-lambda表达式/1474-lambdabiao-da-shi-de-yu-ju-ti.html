@@ -55,6 +55,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="1475-lambdabiao-da-shi-yong-zuo-wei-tuo-he-biao-da-shi-shu.html" />
+    
     
     <link rel="prev" href="1473-lambdabiao-da-shi-de-can-shu.html" />
     
@@ -3142,27 +3144,27 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.7.5" >
+        <li class="chapter " data-level="1.15.7.5" data-path="1475-lambdabiao-da-shi-yong-zuo-wei-tuo-he-biao-da-shi-shu.html">
             
-                <span>
+                <a href="1475-lambdabiao-da-shi-yong-zuo-wei-tuo-he-biao-da-shi-shu.html">
             
                     
                     14.7.5 Lambda表达式用作委托和表达式树
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.15.7.6" >
+        <li class="chapter " data-level="1.15.7.6" data-path="1476-lambdabiao-da-shi-he-ji-he.html">
             
-                <span>
+                <a href="1476-lambdabiao-da-shi-he-ji-he.html">
             
                     
                     14.7.6 Lambda表达式和集合
             
-                </span>
+                </a>
             
 
             
@@ -3186,40 +3188,40 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.9" >
+        <li class="chapter " data-level="1.15.9" data-path="../149-xiao-jie.html">
             
-                <span>
+                <a href="../149-xiao-jie.html">
             
                     
                     14.9 小结
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.15.10" >
+        <li class="chapter " data-level="1.15.10" data-path="../1410-lian-xi.html">
             
-                <span>
+                <a href="../1410-lian-xi.html">
             
                     
                     14.10 练习
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.15.11" >
+        <li class="chapter " data-level="1.15.11" data-path="../1411-ben-zhang-yao-dian.html">
             
-                <span>
+                <a href="../1411-ben-zhang-yao-dian.html">
             
                     
                     14.11 本章要点
             
-                </span>
+                </a>
             
 
             
@@ -3286,7 +3288,44 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="lambda&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BED;&#x53E5;&#x4F53;">Lambda&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BED;&#x53E5;&#x4F53;</h2>
-<p>&#x2003;&#x2003;&#x5728;&#x524D;&#x9762;&#x7684;&#x6240;&#x6709;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;</p>
+<p>&#x2003;&#x2003;&#x5728;&#x524D;&#x9762;&#x7684;&#x6240;&#x6709;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;Lambda&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BED;&#x53E5;&#x4F53;&#x90FD;&#x53EA;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x3002;&#x6211;&#x4EEC;&#x8FD8;&#x8BF4;&#x660E;&#x4E86;&#x8FD9;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x5982;&#x4F55;&#x89E3;&#x91CA;&#x4E3A;Lambda&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x4F55;&#x7ED9;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E3A;int&#x7684;&#x59D4;&#x6258;&#x4F7F;&#x7528;&#x8868;&#x8FBE;&#x5F0F; <code>paramA + paramB</code> &#x4F5C;&#x4E3A;Lambda&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BED;&#x53E5;&#x4F53;&#xFF08;&#x5047;&#x5B9A;paramA&#x548C;paramB&#x9690;&#x5F0F;&#x6216;&#x663E;&#x5F0F;&#x7C7B;&#x578B;&#x5316;&#x4E3A;int&#x503C;&#xFF0C;&#x5982;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x6240;&#x793A;&#xFF09;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x524D;&#x9762;&#x7684;&#x4E00;&#x4E2A;&#x793A;&#x4F8B;&#x8BF4;&#x660E;&#x4E86;&#x5BF9;&#x4E8E;&#x8BED;&#x53E5;&#x4F53;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x4EE3;&#x7801;&#x800C;&#x8A00;&#xFF0C;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E3A;void&#x7684;&#x59D4;&#x6258;&#x7684;&#x8981;&#x6C42;&#x5E76;&#x4E0D;&#x9AD8;&#xFF1A;</p>
+<pre><code class="lang-csharp">    myTimer.Elapsed += (source, e) =&gt; Console.WriteLine(
+        <span class="hljs-string">&quot;Event handler called after {0} millisenconds.&quot;</span>,
+        (source <span class="hljs-keyword">as</span> Timer).Interval);
+</code></pre>
+<p>&#x2003;&#x2003;&#x4E0A;&#x9762;&#x7684;&#x8BED;&#x53E5;&#x4E0D;&#x8FD4;&#x56DE;&#x4EFB;&#x4F55;&#x503C;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x53EA;&#x662F;&#x6267;&#x884C;&#xFF0C;&#x5176;&#x8FD4;&#x56DE;&#x503C;&#x4E0D;&#x5728;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x53EF;&#x4EE5;&#x5C06;Lambda&#x8868;&#x8FBE;&#x5F0F;&#x770B;&#x6210;&#x533F;&#x540D;&#x65B9;&#x6CD5;&#x8BED;&#x6CD5;&#x7684;&#x6269;&#x5C55;&#xFF0C;&#x6240;&#x4EE5;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;Lambda&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BED;&#x53E5;&#x4F53;&#x4E2D;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x8BED;&#x53E5;&#x3002;&#x4E3A;&#x6B64;&#xFF0C;&#x53EA;&#x9700;&#x628A;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x5757;&#x653E;&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x4E2D;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;C#&#x4E2D;&#x63D0;&#x4F9B;&#x591A;&#x884C;&#x4EE3;&#x7801;&#x7684;&#x5176;&#x4ED6;&#x60C5;&#x51B5;&#xFF1A;</p>
+<pre><code class="lang-csharp">    (paramA, param2) =&gt; 
+    {
+        <span class="hljs-comment">// Multiple statements ahoy!</span>
+    }
+</code></pre>
+<p>&#x2003;&#x2003;&#x5982;&#x679C;&#x4F7F;&#x7528;Lambda&#x8868;&#x8FBE;&#x5F0F;&#x548C;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E0D;&#x662F;void&#x7684;&#x59D4;&#x6258;&#x7C7B;&#x578B;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x7528;return&#x5173;&#x952E;&#x5B57;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x503C;&#xFF0C;&#x8FD9;&#x4E0E;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x4E00;&#x6837;&#xFF1A;</p>
+<pre><code class="lang-csharp">    (param1, param2) =&gt;
+    {
+        <span class="hljs-comment">// Multiple statements ahoy!</span>
+        <span class="hljs-keyword">return</span> returnValue;
+    }
+</code></pre>
+<p>&#x2003;&#x2003;&#x4F8B;&#x5982;&#xFF0C;&#x53EF;&#x5C06;&#x524D;&#x9762;&#x793A;&#x4F8B;&#x4E2D;&#x7684;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-csharp">    PerformOperations((paramA, paramB) =&gt; paramA + paramB);
+</code></pre>
+<p>&#x2003;&#x2003;&#x6539;&#x5199;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-csharp">    PerformOperations(<span class="hljs-keyword">delegate</span>(<span class="hljs-keyword">int</span> paramA, <span class="hljs-keyword">int</span> paramB)
+        {
+            <span class="hljs-keyword">return</span> paramA + paramB;
+        });
+</code></pre>
+<p>&#x2003;&#x2003;&#x53E6;&#x5916;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x628A;&#x4EE3;&#x7801;&#x6539;&#x5199;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-csharp">    PerformOperations((paramA, paramB) =&gt;
+        {
+            <span class="hljs-keyword">return</span> paramA + paramB;
+        });
+</code></pre>
+<p>&#x2003;&#x2003;&#x8FD9;&#x66F4;&#x50CF;&#x662F;&#x539F;&#x6765;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4FDD;&#x6301;&#x4E86;paramA&#x548C;paramB&#x53C2;&#x6570;&#x7684;&#x9690;&#x5F0F;&#x7C7B;&#x578B;&#x5316;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5728;&#x4F7F;&#x7528;&#x5355;&#x4E00;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x65F6;&#xFF0C;Lambda&#x8868;&#x8FBE;&#x5F0F;&#x6700;&#x6709;&#x7528;&#xFF0C;&#x4E5F;&#x6700;&#x7B80;&#x6D01;&#x3002;&#x8BF4;&#x5B9E;&#x8BDD;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x591A;&#x4E2A;&#x8BED;&#x53E5;&#xFF0C;&#x5219;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x975E;&#x533F;&#x540D;&#x65B9;&#x6CD5;&#x6765;&#x66FF;&#x4EE3;Lambda&#x8868;&#x8FBE;&#x5F0F;&#x8F83;&#x597D;&#xFF0C;&#x8FD9;&#x4E5F;&#x4F1A;&#x4F7F;&#x4EE3;&#x7801;&#x66F4;&#x4FBF;&#x4E8E;&#x91CD;&#x7528;&#x3002;</p>
+<p>&#x1F51A;</p>
 
                                 
                                 </section>
@@ -3298,10 +3337,14 @@
 
             
                 
-                <a href="1473-lambdabiao-da-shi-de-can-shu.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 14.7.3 Lambda表达式的参数">
+                <a href="1473-lambdabiao-da-shi-de-can-shu.html" class="navigation navigation-prev " aria-label="Previous page: 14.7.3 Lambda表达式的参数">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="1475-lambdabiao-da-shi-yong-zuo-wei-tuo-he-biao-da-shi-shu.html" class="navigation navigation-next " aria-label="Next page: 14.7.5 Lambda表达式用作委托和表达式树">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -3310,7 +3353,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"14.7.4 Lambda表达式的语句体","level":"1.15.7.4","depth":3,"next":{"title":"14.7.5 Lambda表达式用作委托和表达式树","level":"1.15.7.5","depth":3,"ref":"","articles":[]},"previous":{"title":"14.7.3 Lambda表达式的参数","level":"1.15.7.3","depth":3,"path":"第14章 C＃语言的改进/147-lambda表达式/1473-lambdabiao-da-shi-de-can-shu.md","ref":"第14章 C＃语言的改进/147-lambda表达式/1473-lambdabiao-da-shi-de-can-shu.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","dirction":"沈军","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"博军一笑的个人主页","language":"zh-cn","gitbook":">=2.0.0","description":"天道酬勤"},"file":{"path":"第14章 C＃语言的改进/147-lambda表达式/1474-lambdabiao-da-shi-de-yu-ju-ti.md","mtime":"2017-03-27T14:43:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-27T14:44:12.126Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"14.7.4 Lambda表达式的语句体","level":"1.15.7.4","depth":3,"next":{"title":"14.7.5 Lambda表达式用作委托和表达式树","level":"1.15.7.5","depth":3,"path":"第14章 C＃语言的改进/147-lambda表达式/1475-lambdabiao-da-shi-yong-zuo-wei-tuo-he-biao-da-shi-shu.md","ref":"第14章 C＃语言的改进/147-lambda表达式/1475-lambdabiao-da-shi-yong-zuo-wei-tuo-he-biao-da-shi-shu.md","articles":[]},"previous":{"title":"14.7.3 Lambda表达式的参数","level":"1.15.7.3","depth":3,"path":"第14章 C＃语言的改进/147-lambda表达式/1473-lambdabiao-da-shi-de-can-shu.md","ref":"第14章 C＃语言的改进/147-lambda表达式/1473-lambdabiao-da-shi-de-can-shu.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","dirction":"沈军","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"博军一笑的个人主页","language":"zh-cn","gitbook":">=2.0.0","description":"天道酬勤"},"file":{"path":"第14章 C＃语言的改进/147-lambda表达式/1474-lambdabiao-da-shi-de-yu-ju-ti.md","mtime":"2017-03-28T01:56:20.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T13:45:55.939Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
