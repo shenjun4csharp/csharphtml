@@ -3188,40 +3188,40 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15.9" data-path="../../第14章 C＃语言的改进/149-xiao-jie.html">
+        <li class="chapter " data-level="1.15.9" >
             
-                <a href="../../第14章 C＃语言的改进/149-xiao-jie.html">
+                <span>
             
                     
                     14.9 小结
             
-                </a>
+                </span>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.15.10" data-path="../../第14章 C＃语言的改进/1410-lian-xi.html">
+        <li class="chapter " data-level="1.15.10" >
             
-                <a href="../../第14章 C＃语言的改进/1410-lian-xi.html">
+                <span>
             
                     
                     14.10 练习
             
-                </a>
+                </span>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.15.11" data-path="../../第14章 C＃语言的改进/1411-ben-zhang-yao-dian.html">
+        <li class="chapter " data-level="1.15.11" >
             
-                <a href="../../第14章 C＃语言的改进/1411-ben-zhang-yao-dian.html">
+                <span>
             
                     
                     14.11 本章要点
             
-                </a>
+                </span>
             
 
             
@@ -3608,29 +3608,28 @@
 <blockquote>
 <p>&#x2003;&#x2003;<strong>&#x793A;&#x4F8B;&#x7684;&#x8BF4;&#x660E;</strong></p>
 <p>&#x2003;&#x2003;&#x5728;&#x8FD9;&#x4E2A;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x6CDB;&#x578B;&#x7C7B;<code>Farm&lt;T&gt;</code>&#xFF0C;&#x5B83;&#x6CA1;&#x6709;&#x7EE7;&#x627F;&#x6CDB;&#x578B;List&#x7C7B;&#xFF0C;&#x800C;&#x5C06;&#x6CDB;&#x578B;List&#x7C7B;&#x4F5C;&#x4E3A;&#x516C;&#x5171;&#x5C5E;&#x6027;&#x516C;&#x5F00;&#xFF0C;&#x8BE5;List&#x7684;&#x7C7B;&#x578B;&#x7531;&#x4F20;&#x9001;&#x7ED9;<code>Farm&lt;T&gt;</code>&#x7684;&#x7C7B;&#x578B;&#x53C2;&#x6570;T&#x786E;&#x5B9A;&#xFF0C;&#x4E14;&#x88AB;&#x7EA6;&#x675F;&#x4E3A;Animals&#xFF0C;&#x6216;&#x8005;&#x7EE7;&#x627F;&#x81EA;Animal&#x3002;</p>
-<p>```csharp
-        public class Farm<t> : IEnumerable<t>
+</blockquote>
+<pre><code class="lang-csharp">
+        public class Farm&lt;T&gt; : IEnumerable&lt;T&gt;
             where T : Animal
         {
-            private List<t> animals = new List<t>();</t></t></t></t></p>
-</blockquote>
-<pre><code>        public List&lt;T&gt; Animals
-        {
-            get
-            {
-                return animals;
-            }
-        }
-</code></pre><pre><code>
+            private List&lt;T&gt; animals = new List&lt;T&gt;();
 
-&gt;&amp;emsp;&amp;emsp;`Farm&lt;T&gt;`&#x8FD8;&#x5B9E;&#x73B0;&#x4E86;`IEnumerable&lt;T&gt;`&#xFF0C;&#x5176;&#x4E2D;&#xFF0C;T&#x4F20;&#x9012;&#x7ED9;&#x8FD9;&#x4E2A;&#x6CDB;&#x578B;&#x63A5;&#x53E3;&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x4EE5;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x4E86;&#x7EA6;&#x675F;&#x3002;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8FED;&#x4EE3;&#x5305;&#x542B;&#x5728;`Farm&lt;T&gt;`&#x4E2D;&#x7684;&#x9879;&#xFF0C;&#x800C;&#x4E0D;&#x5FC5;&#x663E;&#x5F0F;&#x8FED;&#x4EE3;`Farm&lt;T&gt;.Animals`&#x3002;&#x5F88;&#x5BB9;&#x6613;&#x5C31;&#x80FD;&#x505A;&#x5230;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x53EA;&#x9700;&#x8FD4;&#x56DE;Animals&#x516C;&#x5F00;&#x7684;&#x679A;&#x4E3E;&#x5668;&#x5373;&#x53EF;&#xFF0C;&#x8BE5;&#x679A;&#x4E3E;&#x5668;&#x662F;&#x4E00;&#x4E2A;`List&lt;T&gt;`&#x7C7B;&#xFF0C;&#x4E5F;&#x5B9E;&#x73B0;&#x4E86;`IEnumerable&lt;T&gt;`&#x3002;
-
-&gt;```csharp
-            public IEnumerator&lt;T&gt; GetEnumerator()
+            public List&lt;T&gt; Animals
             {
-                return animals.GetEnumerator();
+                get
+                {
+                    return animals;
+                }
             }
-</code></pre><blockquote>
+</code></pre>
+<blockquote>
+<p>&#x2003;&#x2003;<code>Farm&lt;T&gt;</code>&#x8FD8;&#x5B9E;&#x73B0;&#x4E86;<code>IEnumerable&lt;T&gt;</code>&#xFF0C;&#x5176;&#x4E2D;&#xFF0C;T&#x4F20;&#x9012;&#x7ED9;&#x8FD9;&#x4E2A;&#x6CDB;&#x578B;&#x63A5;&#x53E3;&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x4EE5;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x4E86;&#x7EA6;&#x675F;&#x3002;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8FED;&#x4EE3;&#x5305;&#x542B;&#x5728;<code>Farm&lt;T&gt;</code>&#x4E2D;&#x7684;&#x9879;&#xFF0C;&#x800C;&#x4E0D;&#x5FC5;&#x663E;&#x5F0F;&#x8FED;&#x4EE3;<code>Farm&lt;T&gt;.Animals</code>&#x3002;&#x5F88;&#x5BB9;&#x6613;&#x5C31;&#x80FD;&#x505A;&#x5230;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x53EA;&#x9700;&#x8FD4;&#x56DE;Animals&#x516C;&#x5F00;&#x7684;&#x679A;&#x4E3E;&#x5668;&#x5373;&#x53EF;&#xFF0C;&#x8BE5;&#x679A;&#x4E3E;&#x5668;&#x662F;&#x4E00;&#x4E2A;<code>List&lt;T&gt;</code>&#x7C7B;&#xFF0C;&#x4E5F;&#x5B9E;&#x73B0;&#x4E86;<code>IEnumerable&lt;T&gt;</code>&#x3002;</p>
+<pre><code class="lang-csharp">            <span class="hljs-function"><span class="hljs-keyword">public</span> IEnumerator&lt;T&gt; <span class="hljs-title">GetEnumerator</span>(<span class="hljs-params"></span>)
+            </span>{
+                <span class="hljs-keyword">return</span> animals.GetEnumerator();
+            }
+</code></pre>
 <p>&#x2003;&#x2003;&#x56E0;&#x4E3A;<code>IEnumerable&lt;T&gt;</code>&#x7EE7;&#x627F;&#x81EA;IEnumerable&#xFF0C;&#x6240;&#x4EE5;&#x8FD8;&#x9700;&#x8981;&#x5B9E;&#x73B0;<code>IEnuerable.GetEnumerator()</code>&#xFF1A;</p>
 <pre><code class="lang-csharp">            IEnumerator IEnumerable.GetEnumerator()
             {
@@ -3638,41 +3637,39 @@
             }
 </code></pre>
 <p>&#x2003;&#x2003;&#x4E4B;&#x540E;&#xFF0C;<code>Farm&lt;T&gt;</code>&#x5305;&#x542B;&#x7684;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x5229;&#x7528;&#x4E86;&#x62BD;&#x8C61;&#x7C7B;Animal&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
-<p>```csharp
-            public void MakeNoises()
-            {
-                foreach(T animal in animals)
+</blockquote>
+<pre><code class="lang-csharp">            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">MakeNoises</span>(<span class="hljs-params"></span>)
+            </span>{
+                <span class="hljs-keyword">foreach</span>(T animal <span class="hljs-keyword">in</span> animals)
                 {
                     animal.MakeANoise();
                 }
-            }</p>
-</blockquote>
-<pre><code>        public void FeedTheAnimals()
-        {
-            foreach(T animal in animals)
-            {
-                animal.Feed();
             }
-        }
-</code></pre><pre><code>
-&gt;&amp;emsp;&amp;emsp;T&#x88AB;&#x7EA6;&#x675F;&#x4E3A;Animal&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x4F1A;&#x6B63;&#x786E;&#x7F16;&#x8BD1;---&#x65E0;&#x8BBA;T&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;MakeNoise()&#x548C;Feed()&#x65B9;&#x6CD5;&#x3002;
 
-&gt;&amp;emsp;&amp;emsp;&#x4E0B;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;GetCows()&#x66F4;&#x52A0;&#x6709;&#x8DA3;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x63D0;&#x53D6;&#x4E86;&#x96C6;&#x5408;&#x7C7B;&#x578B;&#x4E3A;Cow&#xFF08;&#x6216;&#x7EE7;&#x627F;&#x81EA;Cow&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x65B0;&#x7684;SuperCow&#x7C7B;&#xFF09;&#x7684;&#x6240;&#x6709;&#x9879;&#xFF1A;
-
-&gt;```csharp
-            public Farm&lt;Cow&gt; GetCows()
-            {
-                Farm&lt;Cow&gt; cowFarm = new Farm&lt;Cow&gt;();
-                foreach(T animal in animals)
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">FeedTheAnimals</span>(<span class="hljs-params"></span>)
+            </span>{
+                <span class="hljs-keyword">foreach</span>(T animal <span class="hljs-keyword">in</span> animals)
                 {
-                    if(animal is Cow)
+                    animal.Feed();
+                }
+            }
+</code></pre>
+<blockquote>
+<p>&#x2003;&#x2003;T&#x88AB;&#x7EA6;&#x675F;&#x4E3A;Animal&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x4F1A;&#x6B63;&#x786E;&#x7F16;&#x8BD1;---&#x65E0;&#x8BBA;T&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;MakeNoise()&#x548C;Feed()&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4E0B;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;GetCows()&#x66F4;&#x52A0;&#x6709;&#x8DA3;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x63D0;&#x53D6;&#x4E86;&#x96C6;&#x5408;&#x7C7B;&#x578B;&#x4E3A;Cow&#xFF08;&#x6216;&#x7EE7;&#x627F;&#x81EA;Cow&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x65B0;&#x7684;SuperCow&#x7C7B;&#xFF09;&#x7684;&#x6240;&#x6709;&#x9879;&#xFF1A;</p>
+<pre><code class="lang-csharp">            <span class="hljs-function"><span class="hljs-keyword">public</span> Farm&lt;Cow&gt; <span class="hljs-title">GetCows</span>(<span class="hljs-params"></span>)
+            </span>{
+                Farm&lt;Cow&gt; cowFarm = <span class="hljs-keyword">new</span> Farm&lt;Cow&gt;();
+                <span class="hljs-keyword">foreach</span>(T animal <span class="hljs-keyword">in</span> animals)
+                {
+                    <span class="hljs-keyword">if</span>(animal <span class="hljs-keyword">is</span> Cow)
                     {
-                        cowFarm.Animals.Add(animal as Cow)
+                        cowFarm.Animals.Add(animal <span class="hljs-keyword">as</span> Cow)
                     }
                 }
-                return cowFarm;
+                <span class="hljs-keyword">return</span> cowFarm;
             }
-</code></pre><blockquote>
+</code></pre>
 <p>&#x2003;&#x2003;&#x6709;&#x8DA3;&#x7684;&#x662F;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F3C;&#x4E4E;&#x6709;&#x70B9;&#x6D6A;&#x8D39;&#x3002;&#x5982;&#x679C;&#x4EE5;&#x540E;&#x5E0C;&#x671B;&#x6709;&#x540C;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#xFF0C;&#x5982;GetChickens()&#xFF0C;&#x4E5F;&#x9700;&#x8981;&#x663E;&#x5F0F;&#x5B9E;&#x73B0;&#x5B83;&#x4EEC;&#x3002;&#x5728;&#x4F7F;&#x7528;&#x8BB8;&#x591A;&#x7C7B;&#x578B;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x9700;&#x8981;&#x66F4;&#x591A;&#x65B9;&#x6CD5;&#x3002;&#x4E00;&#x4E2A;&#x8F83;&#x597D;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x662F;&#x4F7F;&#x7528;&#x6CDB;&#x578B;&#x65B9;&#x6CD5;&#xFF0C;&#x8BE6;&#x89C1;&#x672C;&#x7AE0;&#x540E;&#x9762;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
 <p>&#x2003;&#x2003;Program.cs&#x4E2D;&#x7684;&#x5BA2;&#x6237;&#x4EE3;&#x7801;&#x6D4B;&#x8BD5;&#x4E86;Form&#x7684;&#x5404;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x5305;&#x542B;&#x7684;&#x4EE3;&#x7801;&#x5927;&#x591A;&#x5DF2;&#x5728;&#x524D;&#x9762;&#x5217;&#x51FA;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x6DF1;&#x5165;&#x63A2;&#x8BA8;&#x8FD9;&#x4E9B;&#x4EE3;&#x7801;&#x3002;</p>
 </blockquote>
@@ -3808,7 +3805,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"12.3.1 定义范型类","level":"1.13.3.1","depth":3,"next":{"title":"12.3.2 定义范型接口","level":"1.13.3.2","depth":3,"path":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1232-ding-yi-fan-xing-jie-kou.md","ref":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1232-ding-yi-fan-xing-jie-kou.md","articles":[]},"previous":{"title":"12.3 定义范型类型","level":"1.13.3","depth":2,"path":"第12章 范型/123-ding-yi-fan-xing-lei-xing.md","ref":"第12章 范型/123-ding-yi-fan-xing-lei-xing.md","articles":[{"title":"12.3.1 定义范型类","level":"1.13.3.1","depth":3,"path":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1231-ding-yi-fan-xing-lei.md","ref":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1231-ding-yi-fan-xing-lei.md","articles":[]},{"title":"12.3.2 定义范型接口","level":"1.13.3.2","depth":3,"path":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1232-ding-yi-fan-xing-jie-kou.md","ref":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1232-ding-yi-fan-xing-jie-kou.md","articles":[]},{"title":"12.3.3 定义范型方法","level":"1.13.3.3","depth":3,"path":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1233-ding-yi-fan-xing-fang-fa.md","ref":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1233-ding-yi-fan-xing-fang-fa.md","articles":[]},{"title":"12.3.4 定义范型委托","level":"1.13.3.4","depth":3,"path":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1234-ding-yi-fan-xing-wei-tuo.md","ref":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1234-ding-yi-fan-xing-wei-tuo.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","dirction":"沈军","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"博军一笑的个人主页","language":"zh-cn","gitbook":">=2.0.0","description":"天道酬勤"},"file":{"path":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1231-ding-yi-fan-xing-lei.md","mtime":"2017-03-22T09:33:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-28T14:05:21.470Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"12.3.1 定义范型类","level":"1.13.3.1","depth":3,"next":{"title":"12.3.2 定义范型接口","level":"1.13.3.2","depth":3,"path":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1232-ding-yi-fan-xing-jie-kou.md","ref":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1232-ding-yi-fan-xing-jie-kou.md","articles":[]},"previous":{"title":"12.3 定义范型类型","level":"1.13.3","depth":2,"path":"第12章 范型/123-ding-yi-fan-xing-lei-xing.md","ref":"第12章 范型/123-ding-yi-fan-xing-lei-xing.md","articles":[{"title":"12.3.1 定义范型类","level":"1.13.3.1","depth":3,"path":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1231-ding-yi-fan-xing-lei.md","ref":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1231-ding-yi-fan-xing-lei.md","articles":[]},{"title":"12.3.2 定义范型接口","level":"1.13.3.2","depth":3,"path":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1232-ding-yi-fan-xing-jie-kou.md","ref":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1232-ding-yi-fan-xing-jie-kou.md","articles":[]},{"title":"12.3.3 定义范型方法","level":"1.13.3.3","depth":3,"path":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1233-ding-yi-fan-xing-fang-fa.md","ref":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1233-ding-yi-fan-xing-fang-fa.md","articles":[]},{"title":"12.3.4 定义范型委托","level":"1.13.3.4","depth":3,"path":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1234-ding-yi-fan-xing-wei-tuo.md","ref":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1234-ding-yi-fan-xing-wei-tuo.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","dirction":"沈军","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"博军一笑的个人主页","language":"zh-cn","gitbook":">=2.0.0","description":"天道酬勤"},"file":{"path":"第12章 范型/123-ding-yi-fan-xing-lei-xing/1231-ding-yi-fan-xing-lei.md","mtime":"2018-05-07T06:26:46.655Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-05-13T12:26:14.433Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
